@@ -12,5 +12,8 @@
     <?php
     include 'components/table.php';
     ?>
+    <footer>
+    <a href="/warde-me-intra/advance">recherche avancer</a> 
+    </footer>
 </body>
 </html>

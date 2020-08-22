@@ -19,9 +19,16 @@ function checkuser($userNameReq, $userPassReq){
 
     if ($userNameReq == $username &&  $userPassReq == $pass ){
         header("Location: /warde-me-intra/table");
+        $_SESSION["check"]= true;
         exit;
     } else {
         header("Location: /warde-me-intra?error=1");
+        $_SESSION["check"]= false;
         exit;
     }
+};
+
+function recupAllDataByType($name, $type){
+    $req = selectBynameByType($name, $type);
+    return $req;
 }

@@ -26,3 +26,13 @@ function selectAllById($id){
     ]);
     return $req;
 }
+
+function selectBynameByType($name, $type){
+
+    $bdd = dbConnect();
+    $req = $bdd->prepare("SELECT * from responce WHERE $type = :names ");
+    $req->execute([
+        "names" => $name,
+    ]);
+    return $req;
+}
