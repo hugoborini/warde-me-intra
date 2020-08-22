@@ -30,8 +30,15 @@
                 <p>Sexe : <?=$data['sexe']?></p>
                 <p>Metier : <?=$data['metier']?></p>
                 <p>Jouez vous au jeux video ? : <?=$data['is_play']?></p>
+                <?php
+                if($data["is_play"] == "non"){
+                    ?>
+                    <?php
+                } else { 
+                ?>
                 <p>A quelle type de jeux jouez vous ? : <?=$data['play_type']?></p>
                 <p>En moyenne, combien d'heures jouez-vous par semaine aux jeux vidéo (mobile inclus) ? : <?=$data['play_time']?></p>
+                <?php } ?>
         <?php }?>
             </div>
         </div>
