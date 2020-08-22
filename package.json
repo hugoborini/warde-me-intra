@@ -1,0 +1,26 @@
+{
+  "name": "warde-me-intra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "nodemon -e scss -x  node-sass styles/scss -o styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugoborini/warde-me-intra.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugoborini/warde-me-intra/issues"
+  },
+  "homepage": "https://github.com/hugoborini/warde-me-intra#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
+  }
+}
