@@ -1,0 +1,11 @@
+<?php while($data = $room->fetch()){ ?>
+    <p>nom : <?=$data['name']?></p>
+    <p>prenom : <?=$data['lastname']?></p>
+    <p>age : <?=$data['age']?></p>
+    <p>location : <?=$data['location']?></p>
+    <p>sexe : <?=$data['sexe']?></p>
+    <p>metier : <?=$data['metier']?></p>
+    <p>Jouez vous au jeux video ? : <?=$data['is_play']?></p>
+    <p>A quelle type de jeux jouez vous ? : <?=$data['play_type']?></p>
+    <p>En moyenne, combien d'heures jouez-vous par semaine aux jeux vidéo (mobile inclus) ? : <?=$data['play_time']?></p>
+<?php }?>

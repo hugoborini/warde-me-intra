@@ -13,7 +13,7 @@
     include 'components/table.php';
     ?>
     <footer>
-    <a href="/warde-me-intra/advance">recherche avancer</a> 
+    <a href="/warde-me-intra/advance"><div class="bttn-stretch bttn-md">recherche avancer</div></a> 
     </footer>
 </body>
 </html>

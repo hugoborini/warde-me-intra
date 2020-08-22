@@ -36,9 +36,8 @@
 
         <?php
         if (isset($isFetch) && $isFetch == true){
-            while ($data = $rawData->fetch()) {
-                ?>
-                <table class="table mt-4">
+            ?>
+            <table class="table mt-4">
                 <thead class="thead-dark">
                     <tr>
                     <th scope="col">#</th>
@@ -50,6 +49,10 @@
                     </tr>
                 </thead>
                 <tbody>
+                <?php
+            while ($data = $rawData->fetch()) {
+                ?>
+                
                 <tr>
                 <th scope="row"><?= $i?></th>
                 <td><?=$data['name']?></td>
@@ -59,11 +62,12 @@
                 <td><a href="/warde-me-intra/responce/<?=$data['id']?>">...</a></td>
             </tr>
 
-            </tbody>
-            </table>
+            
             <?php
             }
         }
         ?>
+        </tbody>
+        </table>
 </body>
 </html>
