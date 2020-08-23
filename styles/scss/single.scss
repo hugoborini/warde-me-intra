@@ -15,7 +15,7 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    box-shadow: 61px 61px 18px -50px rgba(0,0,0,0.29);
+
     &__header{
         flex-basis: 15%;
         display: flex;
@@ -28,8 +28,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-      
+        box-shadow: 10px 15px 13px 0px rgba(102,102,102,1);
         flex-basis: 85%;
+
         &-text{
             width: 80%;
             display: flex;

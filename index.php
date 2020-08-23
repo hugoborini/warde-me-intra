@@ -57,7 +57,7 @@ $app->get('/responce/{id}', function (Request $request, Response $response, $id)
 
 $app->post('/check', function (Request $request, Response $response){
     $response->getBody();
-    checkuser($_POST['username'], $_POST["password"]);
+    getConnexion($_POST['username'], $_POST["password"]);
     return $response;
 });
 

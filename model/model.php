@@ -36,3 +36,26 @@ function selectBynameByType($name, $type){
     ]);
     return $req;
 }
+
+function checkUser($pseudo, $mdp){
+    $bdd = dbConnect();
+    $member = $bdd->prepare("SELECT * FROM member WHERE pseudo = :pseudo");
+    $member->execute([
+        'pseudo' => $pseudo,
+    ]);
+
+    
+    $member_data = $member->fetch();
+    if (!$member_data){
+        return false;
+    }
+    if (!$member_data){
+        return false;
+    }
+    // $ispasscorrect = password_verify($pass, $member_data['pass']);
+    if ($member_data["pseudo"] == $pseudo && $member_data['mdp'] == $mdp) {
+        return true;
+    }else{
+        return false;
+    }
+}

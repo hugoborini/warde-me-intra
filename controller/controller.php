@@ -13,11 +13,10 @@ function recupAllDataById($id){
 };
 
 
-function checkuser($userNameReq, $userPassReq){
-    $username = "admin";
-    $pass = "pass";
+function getConnexion($pseudo, $mdp){
+   $check_account = checkUser($pseudo, $mdp);
 
-    if ($userNameReq == $username &&  $userPassReq == $pass ){
+    if ($check_account == true){
         header("Location: /warde-me-intra/table");
         $_SESSION["check"]= true;
         exit;
@@ -26,7 +25,7 @@ function checkuser($userNameReq, $userPassReq){
         $_SESSION["check"]= false;
         exit;
     }
-};
+}
 
 function recupAllDataByType($name, $type){
     $req = selectBynameByType($name, $type);

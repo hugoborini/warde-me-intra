@@ -20,6 +20,11 @@
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         background-color: #333B3F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        color: whitesmoke;
     }
     form{
         display: flex;
@@ -43,6 +48,7 @@
             height: 30px;
             background-color: #333B3F;
             border-radius: 5px ;
+            cursor: pointer;
             color: white;
         }
     }
